@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth >= 992 && navMenu && navMenu.classList.contains('open')) closeNavMenu();
   });
 
-  // 6. Back To Top Button
+
   const backTop = document.getElementById('back-top');
   if (backTop) {
     window.addEventListener('scroll', () => {
@@ -128,10 +128,10 @@ document.addEventListener('DOMContentLoaded', function () {
     backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
 
-  // 7. Typed Text Animation
+
   const typedEl = document.getElementById('typed-text');
   if (typedEl) {
-    const phrases = ['Front-End Developer', 'UI/UX Enthusiast', 'React Developer', 'Creative Coder'];
+    const phrases = ['Front-End Developer','React Developer'];
     let phraseIdx = 0, charIdx = 0, deleting = false;
 
     function type() {
