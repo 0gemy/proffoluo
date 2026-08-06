@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Gamal Mohamed — Front-End Developer</title>
+  <meta name="description" content="Gamal Mohamed is a Front-End Developer crafting premium, high-performance UI/UX with HTML, CSS, JavaScript, Bootstrap and React. Explore projects, skills and certifications." />
+  <meta name="keywords" content="Gamal Mohamed, Front-End Developer, HTML, CSS, JavaScript, React, Bootstrap, Portfolio, UI/UX Designer" />
+  <meta name="author" content="Gamal Mohamed" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://gamalmohamed.dev/" />
+  <meta name="theme-color" content="#061715" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Gamal Mohamed — Front-End Developer" />
+  <meta property="og:description" content="Premium portfolio of a modern Front-End Developer specializing in responsive, high-performance web experiences." />
+  <meta property="og:url" content="https://gamalmohamed.dev/" />
+  <meta property="og:image" content="https://gamalmohamed.dev/gemy.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gamal Mohamed — Front-End Developer" />
+  <meta name="twitter:description" content="Premium portfolio of a modern Front-End Developer specializing in responsive, high-performance web experiences." />
+  <meta name="twitter:image" content="https://gamalmohamed.dev/gemy.jpg" />
+
+  <link rel="icon" href="img/logo2.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Gamal Mohamed","jobTitle":"Front-End Developer","url":"https://gamalmohamed.dev/","sameAs":["https://github.com/","https://www.linkedin.com/"],"knowsAbout":["HTML5","CSS3","JavaScript","React.js","Bootstrap","UI/UX Design"]}
+  </script>
+
+</head>
+<body>
+
+
+
+<div id="scroll-progress"></div>
+
+<div id="loader">
+  <div class="loader-logo">&lt;GEMY/&gt;</div>
+  <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+</div>
+
+<button id="back-top" aria-label="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></button>
+
+<nav class="navbar navbar-expand-lg" id="navbar" aria-label="Main navigation">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">&lt;GEMY/&gt;</a>
+    <div class="d-flex align-items-center gap-2 order-lg-last ms-lg-3 flex-shrink-0">
+      <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+        <i data-lucide="moon" id="theme-icon" aria-hidden="true"></i>
+      </button>
+      <button class="navbar-toggler border-0 ms-1" type="button" id="navToggler" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <div class="navbar-toggler-icon">
+          <div class="toggler-line"></div>
+          <div class="toggler-line"></div>
+          <div class="toggler-line"></div>
+        </div>
+      </button>
+    </div>
+    <div class="nav-offcanvas d-none d-lg-flex" id="navMenuDesktop">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="nav-backdrop" id="navBackdrop"></div>
+<div class="nav-offcanvas d-lg-none" id="navMenu"></div>
+
+<main id="main-content">
+<section id="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="aurora"></div>
+
+  
+  <div class="floating-shape" style="width:300px;height:300px;top:10%;left:-5%;opacity:0.4;"></div>
+  <div class="floating-shape" style="width:200px;height:200px;bottom:15%;right:5%;opacity:0.3;animation-delay:-3s;animation-duration:10s;"></div>
+
+  <div class="container hero-content">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5 order-lg-2">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-decor"></div>
+          <div class="hero-photo-card">
+            <img src="img/gemy2.jpg" alt="Gamal Mohamed — Front-End Developer" width="320" height="400" loading="eager" decoding="async" fetchpriority="high" />
+          </div>
+   
+          <div class="hero-stat-card">
+            <div class="stat-icon-box"><i data-lucide="briefcase" aria-hidden="true"></i></div>
+            <div>
+              <span class="hero-stat-card-num">1+</span>
+              <span class="hero-stat-card-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 order-lg-1">
+        <div class="hero-kicker">Front-End Developer</div>
+        <h1 class="hero-name">Hi, I'm <span>Gamal Mohamed</span></h1>
+        <div class="hero-typed-wrap">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </div>
+      
+        <div class="hero-stats-row">
+          
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-item-num">1+</span>
+            <span class="hero-stat-item-label">Years Experience</span>
+          </div>
+          <div class="hero-stat-divider" aria-hidden="true"></div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-item-num">100%</span>
+            <span class="hero-stat-item-label">Client Satisfaction</span>
+          </div>
+        </div>
+        <div class="hero-btns">
+          <button class="btn-primary-custom" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+            <i data-lucide="layout-grid" class="me-2" aria-hidden="true"></i>View Projects
+          </button>
+          <a href="#" class="btn-outline-custom" download>
+            <i data-lucide="download" class="me-2" aria-hidden="true"></i>Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 reveal-left">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-text">
+  <p>
+    Hi, I'm <strong>Gamal Mohamed — a Frontend Developer</strong> focused on creating functional, accessible, and high-performance web interfaces.
+  </p>
+
+  <ul class="about-list">
+    <li>
+      <span class="about-list-icon"><i data-lucide="layers"></i></span>
+      <div>
+        <strong>Core Expertise:</strong> Tech Stack: React.js, JavaScript (ES6+), HTML5, CSS3, Bootstrap.
+      </div>
+    </li>
+    <li>
+      <span class="about-list-icon"><i data-lucide="ruler"></i></span>
+      <div>
+        <strong>Design-to-Code Precision:</strong> 100% pixel-perfect conversion from any design file to responsive web layouts.
+      </div>
+    </li>
+    <li>
+      <span class="about-list-icon"><i data-lucide="code-2"></i></span>
+      <div>
+        <strong>Code Quality:</strong> Clean, modular, and maintainable code structure.
+      </div>
+    </li>
+  </ul>
+
+  <p>
+    I am driven by the challenge of bringing UI/UX concepts to life precisely as envisioned.
+  </p>
+</div>
+        <div class="mt-4">
+          <p class="text-muted mb-3" style="font-size:0.85rem;letter-spacing:0.5px;font-weight:600;text-transform:uppercase;">Technologies</p>
+          <div>
+            <span class="tech-pill"><i data-lucide="code" aria-hidden="true"></i> HTML5</span>
+            <span class="tech-pill"><i data-lucide="brush" aria-hidden="true"></i> CSS3</span>
+            <span class="tech-pill"><i data-lucide="braces" aria-hidden="true"></i> JavaScript</span>
+            <span class="tech-pill"><i data-lucide="box" aria-hidden="true"></i> Bootstrap</span>
+            <span class="tech-pill"><i data-lucide="component" aria-hidden="true"></i> React.js</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 reveal-right">
+        <div class="row g-3">
+          <div class="col-6">
+           
+          </div>
+          <div class="col-6">
+            <div class="glass-card stat-card">
+              <div class="stat-number" data-count="1">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="glass-card stat-card">
+              <div class="stat-number" data-count="10">0</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="glass-card stat-card">
+              <div class="stat-number" data-count="5">0</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">What I Know</span>
+      <h2 class="section-title">My <span>Tools</span></h2>
+      <p class="section-subtitle mx-auto">Technologies and tools I've mastered to build exceptional digital experiences</p>
+    </div>
+
+    
+    <div class="row g-4 mb-5">
+      <div class="col-6 col-md-4 col-lg reveal" style="transition-delay:0.1s">
+        <div class="glass-card skill-card">
+          <span class="skill-icon"><i data-lucide="code" aria-hidden="true"></i></span>
+          <div class="skill-name">HTML5</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="95"></div></div>
+          <div class="skill-pct">95%</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg reveal" style="transition-delay:0.2s">
+        <div class="glass-card skill-card">
+          <span class="skill-icon"><i data-lucide="brush" aria-hidden="true"></i></span>
+          <div class="skill-name">CSS3</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="92"></div></div>
+          <div class="skill-pct">92%</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg reveal" style="transition-delay:0.3s">
+        <div class="glass-card skill-card">
+          <span class="skill-icon"><i data-lucide="braces" aria-hidden="true"></i></span>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="88"></div></div>
+          <div class="skill-pct">88%</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg reveal" style="transition-delay:0.4s">
+        <div class="glass-card skill-card">
+          <span class="skill-icon"><i data-lucide="box" aria-hidden="true"></i></span>
+          <div class="skill-name">Bootstrap</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="90"></div></div>
+          <div class="skill-pct">90%</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 col-lg reveal" style="transition-delay:0.5s">
+        <div class="glass-card skill-card">
+          <span class="skill-icon"><i data-lucide="component" aria-hidden="true"></i></span>
+          <div class="skill-name">React.js</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div>
+          <div class="skill-pct">80%</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="row g-4 justify-content-center">
+      <div class="col-auto reveal" style="transition-delay:0.1s">
+        <div class="text-center">
+          <div class="circular-skill">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <defs><linearGradient id="skillGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#00A693"/><stop offset="100%" style="stop-color:#2EE6C8"/></linearGradient></defs>
+              <circle class="circle-bg" cx="50" cy="50" r="45"/>
+              <circle class="circle-fill" cx="50" cy="50" r="45" data-pct="95"/>
+            </svg>
+            <div class="circle-text">95%<small>HTML5</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto reveal" style="transition-delay:0.2s">
+        <div class="text-center">
+          <div class="circular-skill">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"/>
+              <circle class="circle-fill" cx="50" cy="50" r="45" data-pct="92"/>
+            </svg>
+            <div class="circle-text">92%<small>CSS3</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto reveal" style="transition-delay:0.3s">
+        <div class="text-center">
+          <div class="circular-skill">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"/>
+              <circle class="circle-fill" cx="50" cy="50" r="45" data-pct="88"/>
+            </svg>
+            <div class="circle-text">88%<small>JavaScript</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto reveal" style="transition-delay:0.4s">
+        <div class="text-center">
+          <div class="circular-skill">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"/>
+              <circle class="circle-fill" cx="50" cy="50" r="45" data-pct="90"/>
+            </svg>
+            <div class="circle-text">90%<small>Bootstrap</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto reveal" style="transition-delay:0.5s">
+        <div class="text-center">
+          <div class="circular-skill">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+              <circle class="circle-bg" cx="50" cy="50" r="45"/>
+              <circle class="circle-fill" cx="50" cy="50" r="45" data-pct="80"/>
+            </svg>
+            <div class="circle-text">80%<small>React.js</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Education">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">My Education</span>
+      <h2 class="section-title">Academic <span>Background</span></h2>
+      <p class="section-subtitle mx-auto">My educational journey and qualifications</p>
+    </div>
+    <div class="row g-4">
+      
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.1s">
+        <div class="glass-card cert-card" data-cert="1" onclick="openCertModal(this)" role="button" tabindex="0" aria-label="View certificate details" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCertModal(this);}">
+          <div class="cert-img-wrap">
+            <div class="cert-placeholder"><i data-lucide="award" aria-hidden="true"></i></div>
+            <img src="img/information system.jpg" alt="Responsive Web Design certificate" loading="lazy" decoding="async" onerror="this.remove()" />
+            <div class="cert-overlay"><div class="cert-overlay-icon"><i data-lucide="eye" aria-hidden="true"></i></div></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Cambridge</div>
+            <div class="cert-title">Information System </div>
+            <div class="cert-date"><i data-lucide="calendar" class="me-1" aria-hidden="true"></i>2022</div>
+           
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.2s">
+        <div class="glass-card cert-card" data-cert="2" onclick="openCertModal(this)" role="button" tabindex="0" aria-label="View certificate details" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCertModal(this);}">
+          <div class="cert-img-wrap" style="background:linear-gradient(135deg,#062420,#00A693)">
+            <div class="cert-placeholder"><i data-lucide="badge-check" aria-hidden="true"></i></div>
+            <img src="img/frontend.jpg" alt="JavaScript Complete Guide certificate" loading="lazy" decoding="async" onerror="this.remove()" />
+            <div class="cert-overlay"><div class="cert-overlay-icon"><i data-lucide="eye" aria-hidden="true"></i></div></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">T-Square</div>
+            <div class="cert-title">Course On FrontEnd Developer</div>
+            <div class="cert-date"><i data-lucide="calendar" class="me-1" aria-hidden="true"></i>2026</div>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.3s">
+        <div class="glass-card cert-card" data-cert="3" onclick="openCertModal(this)" role="button" tabindex="0" aria-label="View certificate details" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openCertModal(this);}">
+          <div class="cert-img-wrap" style="background:linear-gradient(135deg,#014D48,#2EE6C8)">
+            <div class="cert-placeholder"><i data-lucide="graduation-cap" aria-hidden="true"></i></div>
+            <img src="img/met.jpg" alt="Bachelor Of Information Systems" loading="lazy" decoding="async" onerror="this.remove()" />
+            <div class="cert-overlay"><div class="cert-overlay-icon"><i data-lucide="eye" aria-hidden="true"></i></div></div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Misr Engineering &Technology</div>
+            <div class="cert-title">Bachelor Of Information Systems</div>
+            <div class="cert-date"><i data-lucide="calendar" class="me-1" aria-hidden="true"></i>2026</div>
+         
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<div class="modal fade cert-modal" id="certModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="font-family:'Sora',sans-serif;font-weight:700">Certificate Preview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" style="filter:invert(1)"></button>
+      </div>
+      <div class="modal-body text-center p-4">
+        <div id="certModalContent" style="min-height:300px;display:flex;align-items:center;justify-content:center;"></div>
+        <h4 id="certModalTitle" class="mt-3" style="font-family:'Sora',sans-serif;font-weight:700"></h4>
+        <p id="certModalIssuer" style="color:var(--neon)"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageLightbox" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content lightbox-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <img id="lightboxImg" src="" alt="" class="lightbox-img" onclick="bootstrap.Modal.getInstance(document.getElementById('imageLightbox'))?.hide()" />
+      <div id="lightboxFallback" class="lightbox-fallback">
+        <i data-lucide="image-off" aria-hidden="true"></i>
+        <span>Preview image not available yet</span>
+      </div>
+      <p id="lightboxCaption" class="lightbox-caption"></p>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">What I Offer</span>
+      <h2 class="section-title">My <span>Services</span></h2>
+      <p class="section-subtitle mx-auto">Comprehensive front-end solutions tailored to your unique needs</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.1s">
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="palette" aria-hidden="true"></i></div>
+          <h3 class="service-title">Modern Web Design</h3>
+          <p class="service-desc">Crafting visually stunning, trend-forward websites that capture attention and deliver memorable first impressions.</p>
+          <div class="service-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.2s">
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="terminal" aria-hidden="true"></i></div>
+          <h3 class="service-title">Front-End Development</h3>
+          <p class="service-desc">Building robust, scalable front-end architectures with clean, maintainable code and optimal performance.</p>
+          <div class="service-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.3s">
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="phone" aria-hidden="true"></i></div>
+          <h3 class="service-title">Responsive Design</h3>
+          <p class="service-desc">Pixel-perfect layouts that look and feel exceptional across all devices, screen sizes, and orientations.</p>
+          <div class="service-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.4s">
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="layers" aria-hidden="true"></i></div>
+          <h3 class="service-title">UI/UX Optimization</h3>
+          <p class="service-desc">Elevating existing interfaces with refined interactions, improved usability, and enhanced visual hierarchy.</p>
+          <div class="service-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.5s">
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="layout-template" aria-hidden="true"></i></div>
+          <h3 class="service-title">Landing Page Design</h3>
+          <p class="service-desc">High-converting, visually compelling landing pages engineered to engage visitors and drive business results.</p>
+          <div class="service-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal" style="transition-delay:0.6s">
+        <div class="glass-card service-card">
+          <div class="service-icon"><i data-lucide="gauge" aria-hidden="true"></i></div>
+          <h3 class="service-title">Performance Optimization</h3>
+          <p class="service-desc">Turbocharging web applications for lightning-fast load times and best-in-class Core Web Vitals scores.</p>
+          <div class="service-arrow"><i data-lucide="arrow-right" aria-hidden="true"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">My Work</span>
+      <h2 class="section-title">Recent <span>Projects</span></h2>
+      <p class="section-subtitle mx-auto">A curated selection of projects showcasing my skills and passion for exceptional web development</p>
+    </div>
+
+    
+    <div class="text-center mb-5 reveal">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      
+    </div>
+
+    <div class="row g-4" id="projects-grid">
+      
+      <div class="col-md-6 col-lg-4 project-item reveal" data-tags="html js" style="transition-delay:0.1s">
+        <div class="glass-card project-card">
+          <div class="project-card-inner">
+            <div class="project-img" data-title="Restaurant Website" onclick="openImageLightbox(this)" role="button" tabindex="0" aria-label="Preview Restaurant Website screenshot" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this);}">
+              <div class="project-img-placeholder"><i data-lucide="shopping-bag" aria-hidden="true"></i></div>
+              <img src="img/file_00000000f94081f4b8cc8ffbd01c08f0.png" alt="Restaurant Website preview" loading="lazy" decoding="async" onerror="this.remove()" />
+              <div class="project-overlay"></div>
+              <div class="project-zoom-icon"><i data-lucide="zoom-in" aria-hidden="true"></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">React</span>
+              </div>
+              <h3 class="project-title">Restaurant Website</h3>
+              <p class="project-desc">مشروع Front-End لموقع مطعم متكامل يتميز بتصميم حديث وقائمة طعام ديناميكية وسلة مشتريات واداء سريع وتجربة مستخدم مميزة </p>
+              <div class="project-links">
+                <a href="https://gemy-food-pmce.vercel.app/" class="btn-project btn-demo" target="_blank" rel="noopener noreferrer"><i data-lucide="circle-play" aria-hidden="true"></i> Live Demo</a>
+                <a href="#" class="btn-project btn-github" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 project-item reveal" data-tags="react js" style="transition-delay:0.2s">
+        <div class="glass-card project-card">
+          <div class="project-card-inner">
+            <div class="project-img" style="background:linear-gradient(135deg,#062420,#00A693)" data-title="Graduation Project" onclick="openImageLightbox(this)" role="button" tabindex="0" aria-label="Preview Graduation Project screenshot" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this);}">
+              <div class="project-img-placeholder"><i data-lucide="kanban" aria-hidden="true"></i></div>
+              <img src="img/file_00000000392081f4aeebf1777e8e8e6a.png" alt="Graduation Project preview" loading="lazy" decoding="async" onerror="this.remove()" />
+              <div class="project-overlay"></div>
+              <div class="project-zoom-icon"><i data-lucide="zoom-in" aria-hidden="true"></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                     <span class="project-tag">HTML</span>
+                <span class="project-tag">CSS</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Graduation Project</h3>
+              <p class="project-desc">منصة الكترونية لتسهيل الوصول الى خدمات الاسعافات الاولية وتسهيل تعلم الاسعافات الاولية تحت مسمى "الصحة والسلامة "</p>
+              <div class="project-links">
+                <a href="https://first-aid-six.vercel.app/" class="btn-project btn-demo" target="_blank" rel="noopener noreferrer"><i data-lucide="circle-play" aria-hidden="true"></i> Live Demo</a>
+                <a href="#" class="btn-project btn-github" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 col-lg-4 project-item reveal" data-tags="bootstrap html" style="transition-delay:0.3s">
+        <div class="glass-card project-card">
+          <div class="project-card-inner">
+            <div class="project-img" style="background:linear-gradient(135deg,#014D48,#2EE6C8)" data-title="Event Landing Page" onclick="openImageLightbox(this)" role="button" tabindex="0" aria-label="Preview Event Landing Page screenshot" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openImageLightbox(this);}">
+              <div class="project-img-placeholder"><i data-lucide="calendar-days" aria-hidden="true"></i></div>
+              <img src="img/ChatGPT Image Jul 23, 2026, 05_21_18 PM.png" alt="Event Landing Page preview" loading="lazy" decoding="async" onerror="this.remove()" />
+              <div class="project-overlay"></div>
+              <div class="project-zoom-icon"><i data-lucide="zoom-in" aria-hidden="true"></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                  <span class="project-tag">CSS</span>
+                <span class="project-tag">HTML</span>
+              </div>
+              <h3 class="project-title">E-Commerce Website</h3>
+              <p class="project-desc">موقع تجارة إلكترونية  لعرض الدهانات البحرية ومنتجات تشطيب المنازل</p>
+              <div class="project-links">
+                <a href="https://0gemy.github.io/elnmer/index.html" class="btn-project btn-demo" target="_blank" rel="noopener noreferrer"><i data-lucide="circle-play" aria-hidden="true"></i> Live Demo</a>
+                <a href="#" class="btn-project btn-github" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+   
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <p class="section-subtitle mx-auto">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+    </div>
+    <div class="row g-4">
+      
+      <div class="col-lg-4 reveal-left">
+        <div class="glass-card contact-info-card h-100">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i data-lucide="mail" aria-hidden="true"></i></div>
+            <div class="contact-info-text">
+              <h6>Email</h6>
+              <p><a href="mailto:gemy1gg@gmail.com" style="color:inherit;text-decoration:none">gemy1gg@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i data-lucide="phone" aria-hidden="true"></i></div>
+            <div class="contact-info-text">
+              <h6>Phone</h6>
+              <p><a href="tel:+201099671083" style="color:inherit;text-decoration:none">01099671083</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            
+            
+          </div>
+          <div class="mt-4">
+            <p class="text-muted mb-3" style="font-size:0.8rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;">Follow Me</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="https://github.com/0gemy" class="social-icon-btn" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/_gemy____?igsh=bmtjNTV1eW8yMTY0" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/share/19Js5YgkDR/" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="https://wa.me/201029806137" class="social-icon-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-8 reveal-right">
+        <div class="glass-card contact-form-card h-100">
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-label-custom" for="formName">Full Name</label>
+                  <input type="text" class="form-control-custom" id="formName" name="name" placeholder="Your full name" required autocomplete="name" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="form-label-custom" for="formEmail">Email Address</label>
+                  <input type="email" class="form-control-custom" id="formEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="form-label-custom" for="formSubject">Subject</label>
+                  <input type="text" class="form-control-custom" id="formSubject" name="subject" placeholder="Project inquiry, collaboration..." required />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label class="form-label-custom" for="formMsg">Message</label>
+                  <textarea class="form-control-custom" id="formMsg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-primary-custom w-100">
+                  <i data-lucide="send" class="me-2" aria-hidden="true"></i>Send Message
+                </button>
+                <div class="form-msg success" id="formSuccess" role="status" aria-live="polite"><i data-lucide="circle-check" class="me-2" aria-hidden="true"></i>Message sent successfully! I'll get back to you soon.</div>
+                <div class="form-msg error" id="formError" role="alert" aria-live="assertive"><i data-lucide="circle-alert" class="me-2" aria-hidden="true"></i>Please fill in all required fields correctly.</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <span class="footer-brand">&lt;GEMY/&gt;</span>
+        <p class="footer-desc">Front-End Developer crafting premium digital experiences with passion, precision, and a deep love for clean code.</p>
+        <div class="d-flex gap-2 mt-4">
+          <a href="https://github.com/0gemy" class="social-icon-btn" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" class="social-icon-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/_gemy____?igsh=bmtjNTV1eW8yMTY0" class="social-icon-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/share/19Js5YgkDR/" class="social-icon-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="https://wa.me/201029806137" class="social-icon-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <p class="footer-title">Navigation</p>
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#projects" class="footer-link">Projects</a>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <p class="footer-title">Services</p>
+        <a href="#services" class="footer-link">Web Design</a>
+        <a href="#services" class="footer-link">Development</a>
+        <a href="#services" class="footer-link">UI/UX</a>
+        <a href="#services" class="footer-link">Landing Pages</a>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p class="footer-title">Quick Contact</p>
+        <p class="footer-desc" style="margin-bottom:12px">Available for freelance projects and full-time opportunities.</p>
+        
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 <span>Gamal Mohamed</span>. Crafted with <span>♥</span> and lots of coffee.</p>
+      <div class="d-flex gap-2">
+        <a href="#hero" class="footer-link" style="margin:0">Privacy</a>
+        <a href="#hero" class="footer-link" style="margin:0">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
